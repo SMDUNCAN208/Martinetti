@@ -37,9 +37,9 @@ class Martinetti :
             while end == false :
                 indexesOne = [0,0]
                 indexesTwelve = [0,0]
-                dieFirst = dieOne.roll
-                dieSecond = dieTwo.roll
-                dieThird = dieThree.roll
+                dieFirst = dieOne.roll()
+                dieSecond = dieTwo.roll()
+                dieThird = dieThree.roll()
 
                 print(players[i].name + " rolled a " + dieFirst + ", " + dieSecond + " , and a " + dieThird)
 
@@ -83,4 +83,4 @@ class Tests :
         cecilia = Player(Cecilia)
         eva = Player (Eva)
         test = Martinetti(dieFirst, dieSecond, dieThird, cecilia, eva)
-        test.simulateGame
+        test.simulateGame()
