@@ -16,13 +16,13 @@ class Player :
 
 class Martinetti :
     def __init__ (self, _dieOne, _dieTwo, _dieThree, _playerOne, _playerTwo) :
-        dieOne = _dieOne
-        dieTwo = _dieTwo
-        dieThree = _dieThree
-        players = [_playerOne, _playerTwo]
-        one = [1,2,3,4,5,6,7,8,9,10,11,12]
-        twelve = [12,11,10,9,8,7,6,5,4,3,2,1]
-        numPlayers = 2
+        self.dieOne = _dieOne
+        self.dieTwo = _dieTwo
+        self.dieThree = _dieThree
+        self.players = [_playerOne, _playerTwo]
+        self.one = [1,2,3,4,5,6,7,8,9,10,11,12]
+        self.twelve = [12,11,10,9,8,7,6,5,4,3,2,1]
+        self.numPlayers = 2
 
     def simulateGame (self) :
         gameOver = 1
