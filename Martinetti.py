@@ -3,9 +3,6 @@ class Die :
     def __init__(self, _dieSides) :
         numSides = _dieSides
 
-    def __str__ ( self ) :
-        return dieNum
-
     def roll ( self ) :
         dieNum = random.randint(1,6)
 
@@ -18,7 +15,7 @@ class Player :
         indexTwelve = 0
 
 class Martinetti :
-    def __init__ (self, _dieOne, _dieTwo, _playerOne, _playerTwo) : 
+    def __init__ (self, _dieOne, _dieTwo, _dieThree, _playerOne, _playerTwo) :
         dieOne = _dieOne
         dieTwo = _dieTwo
         dieThree = _dieThree
@@ -80,9 +77,9 @@ class Martinetti :
                              
 class Tests : 
     def __init__( self ) :
-        dieFirst = Die() #First die
-        dieSecond = Die() #Second die
-        dieThird = Die() # Third die
+        dieFirst = Die(6) #First die
+        dieSecond = Die(6) #Second die
+        dieThird = Die(6) # Third die
         cecilia = Player(Cecilia)
         eva = Player (Eva)
         test = Martinetti(dieFirst, dieSecond, dieThird, cecilia, eva)
