@@ -1,7 +1,7 @@
 import random
 class Die :
     def __init__(self, _dieSides) :
-        numSides = _dieSides
+        self.numSides = _dieSides
 
     def roll ( self ) :
         dieNum = random.randint(1,6)
@@ -9,10 +9,10 @@ class Die :
 
 class Player :
     def __init__ (self, _name) :
-        name = _name
-        gameWon = 0
-        indexOne = 0
-        indexTwelve = 0
+        self.name = _name
+        self.gameWon = 0
+        self.indexOne = 0
+        self.indexTwelve = 0
 
 class Martinetti :
     def __init__ (self, _dieOne, _dieTwo, _dieThree, _playerOne, _playerTwo) :
